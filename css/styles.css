@@ -1,0 +1,118 @@
+body, header, nav, main, footer, img, h1, ul {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+
+/* Style rules for header */
+header {
+    background-color: darkorange;
+    text-align: center;
+	font-size: 2em;
+	color: #fff;
+}
+
+header h1 {
+    margin: 0 auto;
+}
+
+/* Style rules for nav */
+nav {
+    background-color: darkorange;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 2em;
+    border-top: 1px solid darkorange;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Show mobile class, hide desktop class */
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+/* Style rules for main */
+main {
+    padding: 2%;
+    background-color: #000;
+    overflow: auto;
+    color: #fff;
+}
+
+#threat, #range, #maneater {
+    width: 29%;
+    float: left;
+    margin: 0;
+    padding: 1% 2%
+}
+
+#links {
+    background-color: darkorange;
+    text-align: center;
+    color: #000;
+}
+
+/* Media query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+    
+   /* Desktop Viewport: Show desktop class, hide mobile class */
+    .desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid darkorange;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a:hover {
+        color: darkorange;
+        background-color: #000
+    }
+    
+}
+
+footer {
+    text-align: center;
+    padding: 2%;
+    color: darkorange;
+}
